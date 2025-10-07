@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Daps Bookstore</title>
+    
+
+    <link rel="stylesheet" href="style.css">
+    <script defer src="myScript.js"></script>
+</head>
+<body>
+
+  <div id="loginModal" class="login-modal">
+    <div class="login-box">
+      <h2>Log In</h2>
+      <form id="loginForm">
+        <input type="email" id="loginEmail" placeholder="Email" required>
+        <input type="password" id="loginPassword" placeholder="Password" required>
+        <button type="submit">Log In</button>
+      </form>
+    </div>
+  </div>
+  
+<div id="homepage">
+    <header class="header">
+        <nav class="nav">
+          
+          <ul class="nav-list">
+            <div id="hamburger">&#9776;</div>
+
+            <div style="display: flex; float: left;">
+            <li><a href="#">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#contact">Learn</a></li>
+            </div> 
+
+           <div> <h1 class="DAPELO">DAPELO</h1></div>  
+
+            <div style="display: flex; float:right;"></div>
+            <li><a href="#resources">Resources</a></li>
+            <li><a href="#contact">Contact</a></li>
+            <li><a href="login.php">LogIn</a></li>
+            <li><button id="logoutBtn" style="background:none; border:none; color:rgb(241, 120, 120); cursor:pointer;">Logout</button></li>
+
+            
+          </ul>
+        </nav>
+      </header>
+      
+
+    <section class="hero">
+        <div class="hero-content">
+            <h1>The Daps Bookstore</h1>
+            <p>Discover a massive collection of books for every genre and interest.</p>
+            <button type="button" onclick="location.href='login.php'">Log In</button>
+        </div>
+    </section>
+
+    <section class="arrangment">
+        <section class="how-it-works">
+                <div class="text-box">
+                     <h2>How it Works</h2>
+                   <p>Explore books in every genre from entertainment to self-development.</p>
+                  <button id="find">Find Books</button>
+                </div>
+             </section>
+               <div class="image-box">
+                <img src="worldoflitreture.jpeg" alt="Bookshelf">
+               </div>
+            </section>
+
+    <!-- SERVICES SECTION (Two on top, one centered below) -->
+<section class="arrangment2">
+  <section class="services">
+    <h2>Our Services</h2>
+    <div class="services-wrapper">
+          <div class="top-row">
+            <div class="buybooks">
+              <h3>Buy Books</h3>
+              <p>Order books and have them delivered or download them after purchase.</p>
+              <button class="learnmore">Learn More</button>
+          </div>
+
+          <div class="sellbooks">
+            <h3>Sell Books</h3>
+            <p>Post your own books and articles, or start a business in publishing.</p>
+            <button class="learnmore">Learn More</button>
+          </div>
+         </div>
+
+      <div class="bottom-row">
+        <div class="download" >
+          <h3>Download & Review</h3>
+            <p>Readers can download content, leave reviews, and collaborate with authors.</p>
+            <button class="learnmore">Learn More</button>
+          </div>
+        </div>
+      </div>
+    </section>
+  </section>
+
+  <!-- EXPLORE AND LEARN SECTION -->
+  <section class="features">
+              <h2>Explore and Learn</h2>
+                <p>Resources for your growth as a reader, writer, or entrepreneur.</p>
+      <div class="card-grid">
+          <div class="card publish"> 
+            <div>
+                  <h3>Publish</h3>
+                  <p>Create and sell your stories to a global audience.</p>
+            </div>
+          </div>
+        <div class="card livechat"> 
+         <div>
+               <h3>Live Chat</h3>
+               <p>Interact and share ideas with fellow book enthusiasits.</p>
+           </div>
+      </div>
+      <div class="card feedback">
+        <div>
+        <h3>Feedback</h3> 
+        <p>Rate and review books, or get feedback on your own content.</p>
+      </div>
+    </div>
+    </div>
+    </section>
+  
+    <!-- TESTIMONIALS SECTION -->
+    <section class="testimonials">
+    <h2>What Our Readers Say</h2>
+    <div class="testimonial-wrapper">
+      <button class="prev-btn">&#10094;</button>
+      <div class="testimonial-track">
+        <div class="testimonial-card">
+          <p>"This platform helped me discover amazing self-help books I would have never met before!"</p>
+          <h4>— Aisha M.</h4>
+        </div>
+        <div class="testimonial-card">
+          <p>"Publishing my short stories here gave me my first paid readers. Highly recommend."</p>
+          <h4>— Brian K.</h4>
+        </div>
+        <div class="testimonial-card">
+          <p>"I love the download feature. Easy and smooth!"</p>
+          <h4>— Mercy T.</h4>
+        </div>
+      </div>
+      <button class="next-btn">&#10095;</button>
+    </div>
+  </section>
+  
+  <!-- PARTNER LOGOS -->
+  <section class="logos">
+    <div class="logo-row">
+      <img src="C:/Users/Administrator/OneDrive/Desktop/testing2/logo1.png" alt="Partner 1">
+      <img src="C:/Users/Administrator/OneDrive/Desktop/testing2/logo2.png" alt="Partner 2">
+      <img src="C:/Users/Administrator/OneDrive/Desktop/testing2/logo3.png" alt="Partner 3">
+      <img src="C:/Users/Administrator/OneDrive/Desktop/testing2/logo4.png" alt="Partner 4">
+    </div>
+  </section>
+  
+  <!-- FAQ SECTION -->
+  <section class="faq-section">
+    <div class="faq-left">
+      <h2>Need Help?</h2>
+      <p>Our team is here to support you with all your bookstore needs.</p>
+      <img src="C:/Users/Administrator/OneDrive/Desktop/testing2/support.jpeg" alt="Support Help" />
+    </div>
+    <div class="faq-right">
+      <div class="faq-item">
+        <h3 class="question">
+          How do I buy a book? <span class="toggle-icon">+</span>
+        </h3>
+        <p class="answer">Add it to your cart and complete checkout.</p>
+      </div>
+      <div class="faq-item">
+        <h3 class="question">
+          Can I sell my own books? <span class="toggle-icon">+</span>
+        </h3>
+        <p class="answer">Yes—register as a seller, then upload your listings.</p>
+      </div>
+      <div class="faq-item">
+        <h3 class="question">
+          How do downloads work? <span class="toggle-icon">+</span>
+        </h3>
+        <p class="answer">Download links appear immediately after purchase.</p>
+      </div>
+      <div class="faq-item">
+        <h3 class="question">
+          What payment methods? <span class="toggle-icon">+</span>
+        </h3>
+        <p class="answer">We accept M-Pesa, PayPal, and credit cards.</p>
+      </div>
+    </div>
+  </section>
+  
+  <!-- CONTACT SECTION -->
+  <section class="contact">
+    <div class="contact-left">
+      <h3>Contact Details</h3>
+      <p>Email: support@dapstore.co.ke</p>
+      <p>Phone: +254790112068</p>
+      <p>Address: Nairobi, Kenya</p>
+    </div>
+    <div class="contact-right">
+      <h3>Send Us a Message</h3>
+      <form id="contactForm">
+        <input type="email" id="email" placeholder="Your Email">
+        <textarea id="message" placeholder="Your Message"></textarea>
+        <button type="submit">Submit</button>
+      </form>
+    </div>
+  </section>
+  
+  <!-- FOOTER / ABOUT -->
+  <footer class="footer">
+    <div class="footer-left">
+      <h2>DAPELO</h2>
+      <p>Find support, guidance, and balance.</p>
+    </div>
+    <div class="footer-right">
+      <ul>
+        <li><a href="#">About</a></li>
+        <li><a href="#">Terms</a></li>
+        <li><a href="#">Support</a></li>
+      </ul>
+    </div>
+  </footer>
+</div>
+</body>
+</html>
+  

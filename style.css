@@ -1,0 +1,696 @@
+* {
+  
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+ 
+}
+
+body {
+  background: #f2e7e7;
+  font-family: 'Segoe UI', sans-serif;
+  color: #222;
+  line-height: 1.6;
+}
+
+#homepage{
+  display: none;
+}
+
+.login-modal {
+  position: fixed;
+  top: 0; left: 0;
+  width: 100%; height: 100%;
+  background: rgba(0,0,0,0.7);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+}
+
+.login-box {
+  background: #fff;
+  padding: 30px 40px;
+  border-radius: 10px;
+  text-align: center;
+  width: 300px;
+}
+
+.login-box h2 {
+  margin-bottom: 20px;
+  color: #333;
+}
+
+.login-box input {
+  width: 100%;
+  padding: 12px;
+  margin-bottom: 15px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+}
+
+.login-box button {
+  width: 100%;
+  padding: 12px;
+  background: darkorange;
+  color: #fff;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+
+
+.header {
+ 
+  padding: 0;
+}
+
+.nav {
+  width: 90%;
+  height: 48px;
+  background-color: rgb(246, 242, 238);
+  margin: auto;
+  border-radius: 40px;
+  display: flex;
+  justify-content: center;
+  padding: 10px 0;
+}
+
+.DAPELO {
+  font-size: 28px;
+  color: black;
+  font-weight: bold;
+  margin-bottom: 8px;
+  margin-left: 80px;
+  margin-right: 80px;
+  text-align: center;
+  
+}
+
+.nav-list {
+  
+  list-style: none;
+  display: flex;
+  
+  gap: 25px;
+  
+  
+  
+  padding: 0;
+  margin: 0;
+}
+
+.nav-list li a {
+  text-decoration: none;
+  color: black;
+  font-weight: bold;
+  padding: 10px 14px;
+  transition: 0.3s ease;
+  border-radius: 4px;
+}
+
+.nav-list li a:hover {
+  background-color: rgb(19, 83, 116);
+}
+
+.li{
+  margin: auto;
+}
+
+
+
+.hero {
+  margin: 25px;
+  background: url('Bookstop.jpeg') center/cover no-repeat;
+  
+  height: 460px;
+  border-radius: 60px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  text-align: center;
+  padding: 40px;
+}
+
+.hero-content h1 {
+  font-size: 48px;
+  font-weight: bold;
+  margin-bottom: 12px;
+}
+
+.hero-content p {
+  font-size: 24px;
+  margin-bottom: 25px;
+}
+
+.hero-content button {
+  background-color: darkorange;
+  color: white;
+  padding: 12px 24px;
+  border: none;
+  border-radius: 40px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+.arrangment {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 60px 40px;
+  gap: 20px;
+}
+
+.how-it-works .text-box {
+  width: 250px;
+  max-width: 400px;
+  
+}
+
+.text-box h2 {
+  font-size: 32px;
+  margin-bottom: 16px;
+}
+
+.text-box p {
+  font-size: 16px;
+  margin-bottom: 20px;
+}
+
+.text-box button {
+  background: #333;
+  color: white;
+  padding: 10px 18px;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.image-box img {
+  width: 320px;
+  height: 420px;
+  border-radius: 40px;
+  object-fit: cover;
+}
+
+
+/* ==== SERVICES (2 top, 1 bottom layout) ==== */
+.services{
+  padding: 60px 30px;
+  text-align: center;
+}
+
+.services-wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+  align-items: center;
+}
+
+.top-row {
+  display: flex;
+  gap: 30px;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.bottom-row {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+.features .card-grid {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  flex-wrap: wrap;
+  grid-template-columns: 1fr;
+}
+
+.card, .buybooks, .sellbooks, .download, .publish, .livechat, .feedback {
+  width: 300px;
+  height: 380px;
+  padding: 30px 20px;
+  border-radius: 30px;
+  background-size: cover;
+  background-position: center;
+  color: #d4d4d4;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  text-shadow: 1px 1px 2px rgba(0,0,0,0.5);
+  box-shadow: 0 8px 18px rgba(0, 0, 0, 0.2);
+  transition: transform 0.3s ease;
+}
+.card:hover {
+  transform: translateY(-5px);
+}
+
+.card h3 {
+  font-size: 22px;
+  margin-bottom: 10px;
+}
+
+.card p {
+  font-size: 15px;
+  margin-bottom: 30px;
+}
+
+.buybooks{
+  background-image: url('download.jpeg');
+  
+}
+.sellbooks{
+  background-image: url('time.jpeg');
+}
+
+.download{
+  background-image: url('Rahaa.jpeg');
+}
+
+
+
+
+.publish {
+  background-image: url('publish.jpeg');
+  background-size: cover;
+  background-position: center;
+}
+
+.livechat {
+  background-image: url('share.jpeg');
+  background-size: cover;
+  background-position: center;
+}
+
+.feedback {
+  background-image: url('Pixel.jpeg');
+  background-size: cover;
+  background-position: center;
+}
+
+
+.learnmore {
+  padding: 10px 20px;
+  font-size: 14px;
+  background-color: darkorange;
+  color: white;
+  border-radius: 20px;
+  border: none;
+  cursor: pointer;
+}
+
+
+/* ==== TESTIMONIALS ==== */
+.testimonials {
+  padding: 60px 20px;
+  background-color: #f5f5f5;
+  text-align: center;
+}
+
+.testimonial-wrapper {
+  position: relative;
+  max-width: 800px;
+  margin: auto;
+  overflow: hidden;
+}
+
+.testimonial-track {
+  display: flex;
+  transition: transform 0.5s ease-in-out;
+}
+
+.testimonial-card {
+  min-width: 100%;
+  padding: 30px;
+  box-sizing: border-box;
+}
+
+.testimonial-card p {
+  font-size: 16px;
+  font-style: italic;
+  color: #444;
+}
+
+.testimonial-card h4 {
+  margin-top: 15px;
+  font-weight: bold;
+}
+
+.prev-btn, .next-btn {
+  position: absolute;
+  top: 40%;
+  background: none;
+  border: none;
+  font-size: 30px;
+  cursor: pointer;
+  color: #999;
+  transition: color 0.3s;
+}
+
+.prev-btn:hover, .next-btn:hover {
+  color: #222;
+}
+
+.prev-btn {
+  left: 0;
+}
+
+.next-btn {
+  right: 0;
+}
+
+/* ==== LOGOS ==== */
+.logos {
+  padding: 40px 20px;
+  background: #fff;
+  text-align: center;
+}
+
+.logo-row {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 40px;
+  flex-wrap: wrap;
+}
+
+.logo-row img {
+  width: 120px;
+  height: auto;
+  opacity: 0.8;
+  transition: opacity 0.3s ease;
+}
+
+.logo-row img:hover {
+  opacity: 1;
+}
+
+/* ==== FAQ SECTION ==== */
+.faq-section {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 60px 30px;
+  background-color: #fdfdfd;
+  gap: 40px;
+}
+
+.faq-left {
+  flex: 1 1 300px;
+}
+
+.faq-left img {
+  width: 10%;
+  max-width: 350px;
+  border-radius: 10px;
+  margin-top: 20px;
+  background-image: url('needhelp.jpeg');
+}
+
+.faq-right {
+  flex: 1 1 400px;
+}
+
+.faq-item {
+  margin-bottom: 20px;
+  background: #fff;
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+}
+
+.question {
+  font-size: 16px;
+  font-weight: bold;
+  display: flex;
+  justify-content: space-between;
+  cursor: pointer;
+}
+
+.toggle-icon {
+  margin-left: 10px;
+  font-size: 20px;
+}
+
+.answer {
+  display: none;
+  margin-top: 10px;
+  color: #333;
+  font-size: 14px;
+}
+
+.question.active + .answer {
+  display: block;
+}
+
+/* ==== CONTACT SECTION ==== */
+.contact {
+  
+  margin: 40px;
+  display: flex;
+  flex-wrap: wrap;
+  padding: 60px 30px;
+  background-color: #d6d5cc;
+  gap: 40px;
+  border-radius: 10px;
+}
+
+.contact-left, .contact-right {
+  flex: 1 1 400px;
+}
+
+.contact-right form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.contact-right input,
+.contact-right textarea {
+  padding: 12px;
+  border-radius: 6px;
+  border: 1px solid #f4f4f4;
+  width: 100%;
+  font-size: 14px;
+}
+
+.contact-right button {
+  background-color: darkorange;
+  color: white;
+  padding: 12px;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+/* ==== FOOTER ==== */
+.footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  background-color: #f7f5f1;
+  padding: 40px 30px;
+  border-top: 1px solid #ddd;
+}
+
+.footer-left h2 {
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+.footer-right ul {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.footer-right a {
+  color: #333;
+  text-decoration: none;
+  font-size: 14px;
+}
+
+.footer-right a:hover {
+  text-decoration: underline;
+}
+
+/* ==== MEDIA QUERIES ==== */
+@media screen and (max-width: 768px) {
+  .top-row {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .testimonial-card {
+    padding: 20px;
+  }
+
+  .logos img {
+    width: 80px;
+  }
+
+  .faq-section, .contact {
+    flex-direction: column;
+  }
+
+  .faq-left img {
+    margin: auto;
+  }
+
+  .footer {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .footer-right ul {
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+}
+/* ==== FEATURES (Explore and Learn Section) ==== */
+.features {
+  background-color: #f9f9f9;
+  padding: 60px 30px;
+  text-align: center;
+}
+
+.features h2 {
+  font-size: 28px;
+  margin-bottom: 10px;
+  color: #333;
+}
+
+.features p {
+  font-size: 16px;
+  color: #666;
+  margin-bottom: 30px;
+}
+
+.features .card-grid {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  flex-wrap: wrap;
+}
+
+.features .card {
+  width: 280px;
+  height: 340px;
+  padding: 30px 20px;
+  border-radius: 30px;
+  background-size: cover;
+  background-position: center;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+  box-shadow: 0 8px 18px rgba(0, 0, 0, 0.2);
+  transition: transform 0.3s ease;
+}
+
+.features .card:hover {
+  transform: translateY(-5px);
+}
+
+.features .card h3 {
+  font-size: 22px;
+  margin-bottom: 10px;
+}
+
+.features .card p {
+  font-size: 14px;
+  color: #f0f0f0;
+}
+
+/* ======= Responsive Design ======= */
+
+/* 1. Mobile Navigation */
+#hamburger {
+  font-size: 28px;
+  color: white;
+  cursor: pointer;
+  margin-left: auto;
+  margin-right: 20px;
+  display: block; /* Always visible now */
+}
+
+#hamburger:hover {
+  color: darkorange;
+}
+
+
+/* Hide menu links and show hamburger on mobile */
+@media (max-width: 768px) {
+  .nav-list {
+    flex-direction: column;
+    display: none;
+    background-color: #333;
+    width: 100%;
+  }
+
+  .nav-list.open {
+    display: flex;
+  }
+
+  #hamburger {
+    display: block;
+  }
+}
+
+/* 2. Hero text scaling on smaller screens */
+@media (max-width: 768px) {
+  .hero {
+    height: 300px;
+    border-radius: 30px;
+    margin: 15px;
+    padding: 20px;
+  }
+
+  .hero h1 {
+    font-size: 28px;
+  }
+
+  .hero p {
+    font-size: 18px;
+  }
+
+  .hero button {
+    padding: 10px 14px;
+    font-size: 13px;
+  }
+}
+
+/* 3. Services section: stack cards on mobile */
+@media (max-width: 768px) {
+  .card-grid {
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
+}
+
+/* 4. FAQ section: switch from two columns to one */
+@media (max-width: 768px) {
+  .faq-grid {
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
+}
+
+/* 5. General: make images and text boxes shrink gracefully */
+@media (max-width: 768px) {
+  .image-box img {
+    width: 100%;
+    height: auto;
+  }
+
+  .text-box, .image-box {
+    padding: 20px;
+  }
+}
